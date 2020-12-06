@@ -7,7 +7,20 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TextField(),
+        Center(
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            color: Colors.blue,
+            width: MediaQuery.of(context).size.width * 0.75,
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: 'Search',
+                icon: Icon(Icons.search_outlined),
+                border: InputBorder.none,
+              ),
+            ),
+          ),
+        )
       ],
     );
   }
