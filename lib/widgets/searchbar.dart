@@ -9,13 +9,24 @@ class SearchBar extends StatelessWidget {
       children: [
         Center(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-            color: Colors.blue,
-            width: MediaQuery.of(context).size.width * 0.75,
+            margin: EdgeInsetsDirectional.only(top: 40),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.grey[300],
+              ),
+              borderRadius: BorderRadius.all(Radius.circular(50)),
+            ),
+            padding: EdgeInsets.symmetric(
+              horizontal: 20,
+            ),
+            width: MediaQuery.of(context).size.width * 0.90,
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Search',
-                icon: Icon(Icons.search_outlined),
+                icon: Icon(
+                  Icons.search_outlined,
+                  color: Color(0xff66929b),
+                ),
                 border: InputBorder.none,
               ),
             ),

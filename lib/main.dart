@@ -1,3 +1,4 @@
+import 'package:dribbble_recipe_app/widgets/foodCards.dart';
 import 'package:dribbble_recipe_app/widgets/searchbar.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class Homepage extends StatelessWidget {
         title: Text(
           'What to eat?',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.black54,
           ),
         ),
         elevation: 0,
@@ -40,6 +41,7 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           SearchBar(),
+          FoodCards(),
         ],
       ),
     );
