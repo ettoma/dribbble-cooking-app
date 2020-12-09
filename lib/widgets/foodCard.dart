@@ -2,27 +2,31 @@ import 'package:flutter/material.dart';
 
 class FoodCard extends StatelessWidget {
   final String categoryTitle;
-  final String categoryColour;
+  // final int categoryColour;
   // final Image categoryImage;
 
   FoodCard(
     this.categoryTitle,
-    this.categoryColour,
+    // this.categoryColour,
     // this.categoryImage,
   );
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: Card(
-        elevation: 20,
+        color: Colors.teal[200],
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        elevation: 3,
         child: Column(
           children: [
-            Text(categoryTitle),
-            Text(categoryColour),
-            // Image(
-            //   image: Image.network('https://unsplash.com/photos/IGfIGP5ONV0'),
-            // ),
+            Text(
+              categoryTitle,
+              style: TextStyle(
+                color: Colors.black54,
+                fontSize: 20,
+              ),
+            ),
           ],
         ),
       ),
