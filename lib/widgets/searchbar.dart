@@ -23,9 +23,11 @@ class SearchBar extends StatelessWidget {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Search',
+                hintStyle: TextStyle(fontSize: 20),
                 icon: Icon(
                   Icons.search_outlined,
                   color: Color(0xff66929b),
+                  size: 24,
                 ),
                 border: InputBorder.none,
               ),

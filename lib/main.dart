@@ -1,3 +1,4 @@
+import 'package:dribbble_recipe_app/widgets/bottomNav.dart';
 import 'package:dribbble_recipe_app/widgets/foodCards.dart';
 import 'package:dribbble_recipe_app/widgets/searchbar.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,7 @@ class Homepage extends StatelessWidget {
           FoodCards(),
         ],
       ),
+      bottomNavigationBar: BottomNav(),
     );
   }
 }
