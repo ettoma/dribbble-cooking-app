@@ -1,3 +1,4 @@
+import 'package:dribbble_recipe_app/views/categoryPage.dart';
 import 'package:flutter/material.dart';
 
 class FoodCard extends StatelessWidget {
@@ -14,7 +15,13 @@ class FoodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) =>
+                    CategoryPage(categoryTitle, categoryImage)));
+      },
       child: Card(
         shadowColor: Colors.white,
         color: Color(categoryColour),

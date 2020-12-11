@@ -31,9 +31,7 @@ class FoodCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20, bottom: 20),
-      height: MediaQuery.of(context).size.height * 0.6,
-      width: MediaQuery.of(context).size.width * 0.9,
+      padding: EdgeInsets.all(18),
       child: GridView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.vertical,

@@ -42,7 +42,7 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           SearchBar(),
-          FoodCards(),
+          Expanded(child: FoodCards()),
         ],
       ),
       bottomNavigationBar: BottomNav(),

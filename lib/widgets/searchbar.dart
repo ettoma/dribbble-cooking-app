@@ -17,10 +17,11 @@ class SearchBar extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(50)),
             ),
             padding: EdgeInsets.symmetric(
-              horizontal: 20,
+              horizontal: 18,
             ),
             width: MediaQuery.of(context).size.width * 0.90,
             child: TextField(
+              onSubmitted: (value) => print(value),
               decoration: InputDecoration(
                 hintText: 'Search',
                 hintStyle: TextStyle(fontSize: 20),
