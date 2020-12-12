@@ -17,10 +17,12 @@ class FoodCard extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                    CategoryPage(categoryTitle, categoryImage)));
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                CategoryPage(categoryTitle, categoryImage, categoryColour),
+          ),
+        );
       },
       child: Card(
         shadowColor: Colors.white,
